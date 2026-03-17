@@ -1,40 +1,62 @@
+ultramarine@ultramarine ~/priority via C v15.2.1-gcc 
+❯ ./prio
+Enter number of processes: 5
 
-ultramarine@ultramarine ~/lru via C v15.2.1-gcc 
-❯ ./lru 
-Page 2: FAULT
-Frames: 2 - - 
+Enter details for Process 1
+Process ID: 1
+Arrival Time: 2
+Burst Time: 6
+Priority (lower value = higher priority): 3
 
-Page 5: FAULT
-Frames: 2 5 - 
+Enter details for Process 2
+Process ID: 2
+Arrival Time: 5
+Burst Time: 2
+Priority (lower value = higher priority): 1
 
-Page 1: FAULT
-Frames: 2 5 1 
+Enter details for Process 3
+Process ID: 3
+Arrival Time: 1
+Burst Time: 8
+Priority (lower value = higher priority): 4
 
-Page 2: HIT
-Frames: 2 5 1 
+Enter details for Process 4
+Process ID: 4
+Arrival Time: 0
+Burst Time: 3
+Priority (lower value = higher priority): 2
 
-Page 3: FAULT
-Frames: 2 3 1 
+Enter details for Process 5
+Process ID: 5
+Arrival Time: 4
+Burst Time: 4
+Priority (lower value = higher priority): 2
 
-Page 5: FAULT
-Frames: 2 3 5 
+At time 0, Process 4 is selected (Priority: 2)
 
-Page 4: FAULT
-Frames: 4 3 5 
+At time 3, Process 1 is selected (Priority: 3)
 
-Page 2: FAULT
-Frames: 4 2 5 
+At time 9, Process 2 is selected (Priority: 1)
 
-Page 3: FAULT
-Frames: 4 2 3 
+At time 11, Process 5 is selected (Priority: 2)
 
-Page 1: FAULT
-Frames: 1 2 3 
+At time 15, Process 3 is selected (Priority: 4)
 
-Page 5: FAULT
-Frames: 1 5 3 
+===== RESULT =====
 
-Page 2: FAULT
-Frames: 1 5 2 
+Waiting Time:
+1 = 1
+2 = 4
+3 = 14
+4 = 0
+5 = 7
 
-Total Page Faults = 11
+Turnaround Time:
+1 = 7
+2 = 6
+3 = 22
+4 = 3
+5 = 11
+
+Average Waiting Time = 5.20
+Average Turnaround Time = 9.80
