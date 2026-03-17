@@ -1,0 +1,40 @@
+
+ultramarine@ultramarine ~/lru via C v15.2.1-gcc 
+❯ ./lru 
+Page 2: FAULT
+Frames: 2 - - 
+
+Page 5: FAULT
+Frames: 2 5 - 
+
+Page 1: FAULT
+Frames: 2 5 1 
+
+Page 2: HIT
+Frames: 2 5 1 
+
+Page 3: FAULT
+Frames: 2 3 1 
+
+Page 5: FAULT
+Frames: 2 3 5 
+
+Page 4: FAULT
+Frames: 4 3 5 
+
+Page 2: FAULT
+Frames: 4 2 5 
+
+Page 3: FAULT
+Frames: 4 2 3 
+
+Page 1: FAULT
+Frames: 1 2 3 
+
+Page 5: FAULT
+Frames: 1 5 3 
+
+Page 2: FAULT
+Frames: 1 5 2 
+
+Total Page Faults = 11
